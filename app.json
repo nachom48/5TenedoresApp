@@ -2,6 +2,7 @@
   "expo": {
     "name": "5-Tenedores",
     "slug": "5-Tenedores",
+    "description":"This is like a Tripadvisor App but for Restaurants",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -29,7 +30,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "345c9f24-c787-4067-909b-b3b50dbe7c1b"
+        "projectId": "fc936915-9acb-4fb4-a6ab-6eacbeaedeb5"
       }
     },
     "plugins":[

@@ -26,7 +26,7 @@
     "intl": "^1.2.5",
     "luxon": "^3.3.0",
     "react": "18.2.0",
-    "react-native": "^0.71.7",
+    "react-native": "0.71.8",
     "react-native-appearance": "^0.3.4",
     "react-native-elements": "^3.4.3",
     "react-native-get-random-values": "^1.8.0",
