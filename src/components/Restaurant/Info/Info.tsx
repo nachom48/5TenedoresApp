@@ -2,8 +2,8 @@ import React from 'react'
 import { View } from 'react-native'
 import { Icon, ListItem, Text } from 'react-native-elements'
 import { styles } from './info.styles'
-import { Restaurant } from '../../../screens/Restaurant/RestaurantsScreen/RestaurantsScreen'
 import MapComponent from '../../Shared/Map/MapComponent'
+import { Restaurant } from '../../../utils/interfaces/Restaurant.interface'
 
 interface IInfoProps {
     restaurant: Restaurant

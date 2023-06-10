@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         resizeMode:'contain',
         width:'100%',
         height:150,
-        marginTop:50
+        marginTop:50,
     },
     content:{
         marginHorizontal:40

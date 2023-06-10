@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { ScrollView } from 'react-native'
-import { styles } from './FavoritesScreen.styles'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import UserNotLogged from '../../components/Favorites/UserNotLogged/UserNotLogged'
 import {  collection, doc, getDoc, onSnapshot, query, where } from 'firebase/firestore'

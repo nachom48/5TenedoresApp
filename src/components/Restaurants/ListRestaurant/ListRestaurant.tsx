@@ -2,10 +2,10 @@ import React from 'react'
 import { View, FlatList, TouchableOpacity } from 'react-native'
 import { Text, Image } from "react-native-elements"
 import { styles } from './listRestaurant.styles'
-import { Restaurant } from '../../../screens/Restaurant/RestaurantsScreen/RestaurantsScreen'
 import { useNavigation } from '@react-navigation/native'
 import { screen } from '../../../utils/screenName'
 import { DocumentData, QuerySnapshot } from 'firebase/firestore'
+import { Restaurant } from '../../../utils/interfaces/Restaurant.interface'
 
 interface IListRestaurantProp {
     restaurants:  QuerySnapshot<DocumentData>;

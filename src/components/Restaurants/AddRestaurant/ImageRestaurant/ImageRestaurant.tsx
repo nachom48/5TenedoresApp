@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, ScrollView } from 'react-native'
+import {  ScrollView } from 'react-native'
 import { styles } from './imageRestaurant.styles'
 import { Image } from 'react-native-elements'
 

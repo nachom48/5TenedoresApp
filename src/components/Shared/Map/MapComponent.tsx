@@ -1,7 +1,6 @@
 import React from 'react'
-import { View, Text } from 'react-native'
 import {styles} from './mapComponent.styles'
-import MapView, { MapPressEvent, Marker } from 'react-native-maps'
+import MapView, {  Marker } from 'react-native-maps'
 import openMap from 'react-native-open-maps'
 
 interface IMapComponentProps{

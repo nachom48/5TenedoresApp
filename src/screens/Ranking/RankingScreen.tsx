@@ -1,6 +1,6 @@
-import { DocumentData, QueryDocumentSnapshot, collection, limit, onSnapshot, orderBy, query, where } from 'firebase/firestore'
+import { collection, limit, onSnapshot, orderBy, query } from 'firebase/firestore'
 import React,{useState,useEffect} from 'react'
-import { ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 import { db } from '../../utils'
 import RestaurantRanking from '../../components/Restaurants/RestaurantRanking/RestaurantRanking'
 import { Restaurant } from '../../utils/interfaces/Restaurant.interface'

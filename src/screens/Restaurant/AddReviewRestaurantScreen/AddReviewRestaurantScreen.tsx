@@ -6,7 +6,7 @@ import * as Yup from 'yup'
 import { useFormik } from 'formik'
 import { Toast } from 'react-native-toast-message/lib/src/Toast'
 import { getAuth } from 'firebase/auth'
-import { collection, doc, getDocs,  query, setDoc, updateDoc, where } from 'firebase/firestore'
+import { collection, doc, getDocs, query, setDoc, updateDoc, where } from 'firebase/firestore'
 import { db } from '../../../utils'
 import { mean } from 'lodash'
 import { useNavigation } from '@react-navigation/native'
@@ -90,7 +90,7 @@ export default function AddReviewRestaurantScreen(props: any) {
         try {
             const snapshot = await getDocs(q);
             const reviews = snapshot.docs.map((doc) => doc.data());
-            const arrayStars = reviews.map((review) => 
+            const arrayStars = reviews.map((review) =>
                 review.rating);
             const media = mean(arrayStars);
             const restaurantRef = doc(db, 'restaurants', route.params.idRestaurant.toString());
@@ -130,7 +130,7 @@ export default function AddReviewRestaurantScreen(props: any) {
                 </View>
             </View>
             <Button
-                onPress={()=>formik.handleSubmit}
+                onPress={formik.handleSubmit} 
                 loading={formik.isSubmitting}
                 title='Send review'
                 buttonStyle={styles.styleBtn}

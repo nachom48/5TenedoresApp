@@ -1,1 +1,31 @@
-plugins { id 'java' } group 'org.example' version '1.0-SNAPSHOT' repositories { mavenCentral() } sourceSets { main { java { srcDirs = ['src'] } } } dependencies { compile 'junit:junit:4.12' }
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.1'
+        classpath 'maven-plugin:2.1'
+        classpath 'com.google.gms:google-services:<google_services_version>'
+    }
+}
+
+plugins{
+    id 'maven'
+}
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        maven {
+            url "$rootDir/../node_modules/react-native/android"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

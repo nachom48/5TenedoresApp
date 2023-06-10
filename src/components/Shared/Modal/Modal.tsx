@@ -1,5 +1,4 @@
-import React, { ReactComponentElement } from 'react'
-import { View, Text } from 'react-native'
+import React from 'react'
 import {styles} from './Modal.styles'
 import { Overlay } from 'react-native-elements'
 

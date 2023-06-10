@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { View,ScrollView, Text } from 'react-native'
-import { styles } from './SearchScreen.styles'
 import { SearchBar, ListItem, Avatar, Icon } from 'react-native-elements'
 import Loading from '../../components/Shared/Loading/Loading'
 import { collection, endAt, getDocs, limit, orderBy, query, startAt } from 'firebase/firestore'

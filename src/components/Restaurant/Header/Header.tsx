@@ -1,8 +1,8 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import { styles } from './header.styles'
-import { Restaurant } from '../../../screens/Restaurant/RestaurantsScreen/RestaurantsScreen'
 import { Rating } from 'react-native-elements'
+import { Restaurant } from '../../../utils/interfaces/Restaurant.interface'
 
 interface IHeaderProps {
   restaurant: Restaurant
